@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Список точек</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="index.html" class="top-left-button">Назад к карте</a>
+
+  <main>
+    <h1>Список точек</h1>
+    <ul id="pointList">
+      <!-- Заполняется скриптом -->
+    </ul>
+  </main>
+
+  <script>
+    const points = [
+      { id: 1, text: "Точка 1: описание", image: "image1.jpg" },
+      { id: 2, text: "Точка 2: описание", image: "image2.jpg" },
+      { id: 3, text: "Точка 3: описание", image: "image3.jpg" }
+    ];
+
+    const list = document.getElementById("pointList");
+    points.forEach(p => {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${p.text}</strong><br><img src="${p.image}" width="200">`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>

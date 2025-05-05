@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Интерактивная карта</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="list.html" class="top-left-button">Список точек</a>
+
+  <main>
+    <h1>Интерактивная карта</h1>
+
+    <div class="map-container">
+      <img src="map.jpg" alt="Карта" id="mapImage">
+      <div class="points">
+        <div class="point" style="top: 50%; left: 50%;" data-id="1"></div>
+        <div class="point" style="top: 200px; left: 300px;" data-id="2"></div>
+        <div class="point" style="top: 400px; left: 500px;" data-id="3"></div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="" alt="Фото точки" id="popupImage">
+      <p id="popupText"></p>
+      <button id="closePopup">Закрыть</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

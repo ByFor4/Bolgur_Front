@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map-container {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+#mapImage {
+  width: 100%;
+  height: auto;
+}
+
+.points .point {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  display: none;
+  z-index: 999;
+  text-align: center;
+}
+
+.popup img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.top-left-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: white;
+  border: 1px solid #aaa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  z-index: 10;
+}
