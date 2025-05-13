@@ -1,7 +1,7 @@
 const points = [
-  { id: 1, text: "Точка 1: описание", image: "image1.jpg" },
-  { id: 2, text: "Точка 2: описание", image: "image2.jpg" },
-  { id: 3, text: "Точка 3: описание", image: "image3.jpg" }
+  { id: 1, text: "Точка 1: описание", image: "../image1.jpg" },
+  { id: 2, text: "Точка 2: описание", image: "../image2.jpg" },
+  { id: 3, text: "Точка 3: описание", image: "../image3.jpg" }
 ];
 
 document.querySelectorAll(".point").forEach(point => {

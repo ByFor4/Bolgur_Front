@@ -2,12 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: gray;
 }
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+  z-index: 4;
 }
 
 .map-container {
@@ -15,11 +17,13 @@ h1 {
   display: block;
   max-width: 1000px;
   margin: 20px auto;
+  z-index: 4;
 }
 
 #mapImage {
   width: 100%;
   height: auto;
+  z-index: 4;
 }
 
 .points .point {
@@ -29,6 +33,7 @@ h1 {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 4;
 }
 
 .popup {
@@ -42,12 +47,14 @@ h1 {
   display: none;
   z-index: 999;
   text-align: center;
+  z-index: 4;
 }
 
 .popup img {
   width: 100%;
   max-width: 300px;
   height: auto;
+  z-index: 4;
 }
 
 .top-left-button {
@@ -62,4 +69,46 @@ h1 {
   color: black;
   font-size: 14px;
   z-index: 10;
+  z-index: 6;
+}
+
+.side_menu {
+  /*border: 1px solid red;*/
+  position: fixed;
+  top: 33%;
+  left: 5px;
+  width: 100px;
+  height: 300px;
+  z-index: 6;
+}
+
+.side_menu_el {
+  background: white;
+  border: 1px solid #aaa;
+  padding: 10px 15px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  height: 33%;
+  width: 100px;
+  transition-property: width;
+  transition-duration: 0.5s;
+  z-index: 6;
+}
+
+.side_menu_el:hover{
+  width: 200px;
+  z-index: 6;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 5;
+  display: none;
 }

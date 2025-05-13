@@ -3,22 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Интерактивная карта</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  
+  <div class="overlay" id="overlay"></div>
+
   <a href="list.html" class="top-left-button">Список точек</a>
 
   <main>
+
+    <div class = "side_menu">
+      <div class = "side_menu_el map">Д</div>
+      <div class = "side_menu_el legend">Л</div>
+      <div class = "side_menu_el history">И</div>
+    </div>
+
+    
+
     <h1>Интерактивная карта</h1>
 
     <div class="map-container">
-      <img src="map.jpg" alt="Карта" id="mapImage">
+      <img src="../map.jpg" alt="Карта" id="mapImage">
       <div class="points">
         <div class="point" style="top: 50%; left: 50%;" data-id="1"></div>
         <div class="point" style="top: 25%; left: 70%;" data-id="2"></div>
         <div class="point" style="top: 75%; left: 80%;" data-id="3"></div>
       </div>
     </div>
+
+
+
 
     <div class="popup" id="popup">
       <img src="" alt="Фото точки" id="popupImage">
@@ -27,6 +42,7 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
+  <script src="../overlay.js"></script>
 </body>
 </html>
