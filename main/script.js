@@ -8,10 +8,14 @@ document.querySelectorAll(".point").forEach(point => {
   point.addEventListener("click", () => {
     const id = point.dataset.id;
     const data = points.find(p => p.id == id);
+    const p_top = point.style.top
+    const p_left = point.style.left
 
     document.getElementById("popupImage").src = data.image;
     document.getElementById("popupText").textContent = data.text;
     document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.top = p_top
+    document.getElementById("popup").style.left = p_left
   });
 });
 
