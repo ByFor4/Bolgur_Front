@@ -117,3 +117,21 @@ body {
   z-index: 5;
   display: none;
 }
+
+.page_history {
+  border: 10px solid red;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+}
+
+.page_legend {
+  border: 10px solid green;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+}
