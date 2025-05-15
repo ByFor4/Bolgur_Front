@@ -5,13 +5,30 @@ function opacity_on() {
   }
 
 function opacity_off() {
-    overlay.style.opacity = 0;
+    overlay.style.display = "none"
+    
 }
 
-document.querySelectorAll(".side_menu_el").forEach(side_menu_el => {
+document.querySelectorAll(".legend").forEach(side_menu_el => {
     side_menu_el.addEventListener("click", () => {
         console.log("clik")
         overlay.style.display = "block";
         setTimeout(opacity_on, 100)
+    });
+});
+
+document.querySelectorAll(".history").forEach(side_menu_el => {
+    side_menu_el.addEventListener("click", () => {
+        console.log("clik")
+        overlay.style.display = "block";
+        setTimeout(opacity_on, 100)
+    });
+});
+
+document.querySelectorAll(".map").forEach(side_menu_el => {
+    side_menu_el.addEventListener("click", () => {
+        console.log("clik")
+        setTimeout(opacity_off, 1000)
+        overlay.style.opacity = 0;
     });
 });
