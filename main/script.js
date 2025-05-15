@@ -8,14 +8,37 @@ document.querySelectorAll(".point").forEach(point => {
   point.addEventListener("click", () => {
     const id = point.dataset.id;
     const data = points.find(p => p.id == id);
-    const p_top = point.style.top
-    const p_left = point.style.left
+    const p_top = Number(point.style.top.split("%")[0])
+    const p_left = Number(point.style.left.split("%")[0])
+
 
     document.getElementById("popupImage").src = data.image;
     document.getElementById("popupText").textContent = data.text;
     document.getElementById("popup").style.display = "block";
-    document.getElementById("popup").style.top = p_top
-    document.getElementById("popup").style.left = p_left
+
+    if (p_top > 70) {
+
+      if (p_left > 70) {
+        document.getElementById("popup").style.top = p_top + "%"
+        document.getElementById("popup").style.left = `calc(${p_left}% - 244px)`
+      }
+
+      else {
+        document.getElementById("popup").style.top = p_top + "%"
+        document.getElementById("popup").style.left = p_left + "%"
+      }
+    } else {
+
+      if (p_left > 70) {
+        document.getElementById("popup").style.top = `calc(${p_top}% + 244px)`
+        document.getElementById("popup").style.left = `calc(${p_left}% - 244px)`
+      }
+
+      else {
+        document.getElementById("popup").style.top = `calc(${p_top}% + 244px)`
+        document.getElementById("popup").style.left = p_left + "%"
+      }
+    }
   });
 });
 
