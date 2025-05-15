@@ -1,0 +1,14 @@
+.top-left-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    border: 1px solid #aaa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    z-index: 10;
+    z-index: 6;
+  }
