@@ -1,0 +1,53 @@
+.legend_containers{
+    border: 3px solid red;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+  
+.legend_container {
+    border: 3px solid blue;
+    display: flex;
+    margin: 5%;
+}
+
+.l1 {
+    justify-self: left;
+}
+
+.l2 {
+    justify-self: right;
+}
+
+.l1_text_cont {
+
+}
+
+.l2_text_cont {
+
+}
+
+.il1 {
+    height: 200px;
+    width: 300px;
+}
+
+.hl1 {
+    color: white;
+}
+
+.pl1 {
+    color: white;
+}
+
+.il2 {
+    height: 200px;
+    width: 300px;
+}
+
+.hl2 {
+    color: white;
+}
+
+.pl2 {
+    color: white;
+}
