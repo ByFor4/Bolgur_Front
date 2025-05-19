@@ -2,25 +2,70 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Галерея</title>
+  <title>Интерактивная карта</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_legend.css">
 </head>
 <body>
-  <div class = "legend_containers">
-    <div class = "legend_container l1">
-      <img class = "il1" src = "img 1.jpg">
-      <div class = "l1_text_cont">
-        <h2 class = "hl1">Legend 1</h2>
-        <p class = "pl1">Description legend 1</p>
+  
+  <div class="overlay" id="overlay"></div>
+
+  <a href="list.html" class="top-left-button">Список точек</a>
+
+  <div class = "page_legend" align="center" id="page_legend">
+    <h1 class = "page_title">легенды</h1>
+    <div class = "legend_containers">
+      <div class = "legend_container l1">
+        <img class = "il1" src = "img 1.jpg">
+        <div class = "l1_text_cont">
+          <h2 class = "hl1">Legend 1</h2>
+          <p class = "pl1">Description legend 1</p>
+        </div>
       </div>
-    </div>
-    <div class = "legend_container l2">
-      <div class = "l2_text_cont">
-        <h2 class = "hl2">Legend 2</h2>
-        <p class = "pl2">Description legend 2</p>
+      <div class = "legend_container l2">
+        <div class = "l2_text_cont">
+          <h2 class = "hl2">Legend 2</h2>
+          <p class = "pl2">Description legend 2</p>
+        </div>
+        <img class = "il2" src = "img 2.jpg">
       </div>
-      <img class = "il2" src = "img 2.jpg">
     </div>
   </div>
+
+  <div class = "page_history" align="center" id="page_history" >
+    <h1 class = "page_title">истории</h1>
+  </div>    
+
+  <main>
+
+    <div class = "side_menu">
+      <div class = "side_menu_el map">Д</div>
+      <div class = "side_menu_el legend">Л</div>
+      <div class = "side_menu_el history">И</div>
+    </div>
+
+    <div class="map-container">
+      <img src="../map1.jpg" alt="Карта" id="mapImage">
+      <div class="points">
+        <div class="point" style="top: 50%; left: 50%;" data-id="1"></div>
+        <div class="point" style="top: 25%; left: 75%;" data-id="2"></div>
+        <div class="point" style="top: 75%; left: 25%;" data-id="3"></div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="" alt="Фото точки" id="popupImage">
+      <p id="popupText"></p>
+      <button id="closePopup">Закрыть</button>
+    </div>
+
+  </main>
+  
+
+  
+
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
 </body>
 </html>
+

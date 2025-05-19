@@ -5,12 +5,14 @@ const page_history = document.getElementById('page_history');
 
 function opacity_on_l() {
     overlay.style.opacity = 100;
+    page_legend.style.opacity = 100;
     page_legend.style.display = "block"
     page_history.style.display = "none"
   }
 
 function opacity_on_h() {
     overlay.style.opacity = 100;
+    page_history.style.opacity = 100;
     page_history.style.display = "block"
     page_legend.style.display = "none"
 }
